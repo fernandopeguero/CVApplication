@@ -28,7 +28,7 @@ const Profile = () => {
              <label htmlFor="github">Github</label>
             <input type="text" id="github"  autoComplete="github"  value={state.github} onChange={(e) => {setState({...state, github: e.target.value})}}/>
 
-             <label htmlFor="linkedin">Name</label>
+             <label htmlFor="linkedin">Linkedin</label>
             <input type="text" id="linkedin" autoComplete="linkedin" value={state.linkedin} onChange={(e) => {setState({...state, linkedin: e.target.value})}} />
         </div>
     )
