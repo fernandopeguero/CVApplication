@@ -13,6 +13,11 @@ const Profile = () => {
 
     return(
         <div>
+            <div>
+                 <h2>Profile</h2>
+                 <i>^</i>
+            </div>
+           
             <label htmlFor="name">Name</label>
             <input type="text" id="name" autoComplete="name" value={state.name}  onChange={ (e) => { setState({...state, name: e.target.value}) }}/>
 
@@ -30,6 +35,8 @@ const Profile = () => {
 
              <label htmlFor="linkedin">Linkedin</label>
             <input type="text" id="linkedin" autoComplete="linkedin" value={state.linkedin} onChange={(e) => {setState({...state, linkedin: e.target.value})}} />
+
+            <button>Add Profile</button>
         </div>
     )
 }
