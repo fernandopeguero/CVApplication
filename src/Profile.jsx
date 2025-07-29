@@ -1,15 +1,6 @@
-import { useState } from "react";
 
-const Profile = () => {
+const Profile = ({state, setState}) => {
 
-    const [state, setState] = useState({
-        name: "",
-        phone: "",
-        email: "",
-        portfolio: "",
-        github: "",
-        linkedin: ""
-    })
 
     return(
         <div>
