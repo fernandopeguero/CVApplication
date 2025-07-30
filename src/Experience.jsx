@@ -3,7 +3,7 @@
 const Experience = () => {
 
     return(
-        <div>
+        <div className="card">
             <div>
                 <h2>Experience</h2>
                 <i>^</i>

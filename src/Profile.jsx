@@ -3,7 +3,7 @@ const Profile = ({state, setState}) => {
 
 
     return(
-        <div>
+        <div className="card">
             <div>
                  <h2>Profile</h2>
                  <i>^</i>

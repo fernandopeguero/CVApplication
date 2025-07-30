@@ -3,7 +3,7 @@
 const Education = () => {
 
     return(
-        <div>
+        <div className="card">
             <div>
                 <h2>Education</h2>
                 <i>^</i>
