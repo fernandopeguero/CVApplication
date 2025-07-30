@@ -22,6 +22,15 @@ body {
   margin-bottom: 16px;
   border-radius: 8px;
 
+  .title {
+    display: flex;
+    align-content: center;
+
+    .section_logo {
+      padding-right: 8px;
+    }
+  }
+
   label {
     font-weight: bolder;
   }

@@ -1,3 +1,4 @@
+import profile_icon from "./assets/account_profile.svg"
 
 const Profile = ({state, setState}) => {
 
@@ -5,8 +6,9 @@ const Profile = ({state, setState}) => {
     return(
         <div className="card">
             <div className="title">
-                 <h2>Profile</h2>
-                 <i>^</i>
+                <img className="section_logo" src={profile_icon} alt="" />
+                <h2>Profile</h2>
+                 
             </div>
            
             <label htmlFor="name">Name</label>
