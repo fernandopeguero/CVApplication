@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="card">
             <div className="title" onClick={() => setExpanded(!expanded)}>
                 <img className="section_logo" src={projectIcon} alt="" />
-                <h2>Profile</h2>
+                <h2>Projects</h2>
                 <img className="toggler" src={expanded ? downArrow : arrowUp} alt=""/>             
             </div>
 
