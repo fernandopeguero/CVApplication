@@ -31,6 +31,10 @@ body {
     .section_logo {
       padding-right: 8px;
     }
+
+    .toggler {
+      margin-left: auto;
+    }
   }
 
   label {

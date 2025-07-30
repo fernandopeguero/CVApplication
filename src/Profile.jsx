@@ -13,7 +13,7 @@ const Profile = ({state, setState}) => {
             <div className="title" onClick={() => setExpanded(!expanded)}>
                 <img className="section_logo" src={profile_icon} alt="" />
                 <h2>Profile</h2>
-                <img  src={expanded ? downArrow : arrowUp} alt=""/>             
+                <img className="toggler" src={expanded ? downArrow : arrowUp} alt=""/>             
             </div>
             {expanded && (
                 <>
