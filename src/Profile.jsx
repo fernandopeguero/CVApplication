@@ -4,7 +4,7 @@ const Profile = ({state, setState}) => {
 
     return(
         <div className="card">
-            <div>
+            <div className="title">
                  <h2>Profile</h2>
                  <i>^</i>
             </div>

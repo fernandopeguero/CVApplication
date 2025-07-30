@@ -4,7 +4,7 @@ const Education = () => {
 
     return(
         <div className="card">
-            <div>
+            <div className="title">
                 <h2>Education</h2>
                 <i>^</i>
             </div>

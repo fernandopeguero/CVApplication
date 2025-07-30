@@ -4,7 +4,7 @@ const Experience = () => {
 
     return(
         <div className="card">
-            <div>
+            <div className="title">
                 <h2>Experience</h2>
                 <i>^</i>
             </div>
