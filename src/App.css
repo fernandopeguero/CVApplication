@@ -21,10 +21,12 @@ body {
   padding: 16px 28px;
   margin-bottom: 16px;
   border-radius: 8px;
+  transition: 0.3s;
 
   .title {
     display: flex;
     align-content: center;
+    cursor: pointer;
 
     .section_logo {
       padding-right: 8px;
