@@ -9,7 +9,7 @@ import { useState } from 'react'
 
 function App() {
 
-      const [profile, setProfile] = useState({
+    const [profile, setProfile] = useState({
         name: "",
         phone: "",
         email: "",
@@ -18,19 +18,27 @@ function App() {
         linkedin: ""
     })
 
-        const [education, setEducation] = useState({
+    const [education, setEducation] = useState({
         school: "",
         degree: "",
         from: "",
         to: ""
     })
 
+    const [experience, setExperience] = useState({
+        company:"",
+        position: "",
+        from:"",
+        to: ""
+    })
+    
+
   return (
     <>  
       <Header />
       <Profile state={profile} setState={setProfile} />
       <Education state={education} setState={setEducation} />
-      <Experience />
+      <Experience state={experience} setState={setExperience} />
       <Projects />
     </>
   )

@@ -3,7 +3,7 @@ import arrowUp from "./assets/up-arrow.svg";
 import downArrow from "./assets/down-arrow.svg";
 import libraryIcon from "./assets/library_icon.svg";
 
-const Experience = () => {
+const Experience = ({state, setState}) => {
 
     const [expanded, setExpanded] = useState(false);
 
@@ -19,16 +19,16 @@ const Experience = () => {
 
                 <>
                     <label htmlFor="company">Company</label>
-                    <input type="text" id="company"/>
+                    <input type="text" id="company" value={state.company} onChange={(e) => setState({...state, company: e.target.value})}/>
 
                     <label htmlFor="position">Position</label>
-                    <input type="text" id="position"/>
+                    <input type="text" id="position" value={state.position} onChange={(e) => setState({...state, position: e.target.value})} />
 
                     <label htmlFor="from_date">From</label>
-                    <input type="text" id="from_date" />
+                    <input type="text" id="from_date" value={state.from} onChange={(e) => setState({...state, from: e.target.value})}/>
 
                     <label htmlFor="to_date">To</label>
-                    <input type="text" id="to_date" />
+                    <input type="text" id="to_date" value={state.to} onChange={(e) => setState({...state, to: e.target.value})}/>
                 </>
             )}
 
