@@ -3,9 +3,11 @@ import arrowUp from "./assets/up-arrow.svg";
 import downArrow from "./assets/down-arrow.svg";
 import workHistory from "./assets/work_history.svg";
 
-const Education = () => {
+const Education = ({state, setState}) => {
 
     const [expanded, setExpanded] = useState(false);
+
+
 
     return(
         <div className="card">
@@ -19,16 +21,16 @@ const Education = () => {
 
                 <>
                     <label htmlFor="school">School</label>
-                    <input type="text" id="school" />
+                    <input type="text" id="school" value={state.school} onChange={(e) => setState({...state, school: e.target.value })}/>
 
                     <label htmlFor="degree">Degree/Certificates</label>
-                    <input type="text" id="degree" />
+                    <input type="text" id="degree" value={state.degree} onChange={(e) => setState({...state, degree: e.target.value})}/>
 
                     <label htmlFor="from_date">From</label>
-                    <input type="text" id="from_date" />
+                    <input type="text" id="from_date" value={state.from} onChange={(e) => setState({...state, from: e.target.value})}/>
 
                     <label htmlFor="to_date">To</label>
-                    <input type="text" id="to_date" />
+                    <input type="text" id="to_date" value={state.to} onChange={(e) => setState({...state, to: e.target.value})}/>
                 </>
             )}
 

@@ -18,12 +18,18 @@ function App() {
         linkedin: ""
     })
 
+        const [education, setEducation] = useState({
+        school: "",
+        degree: "",
+        from: "",
+        to: ""
+    })
 
   return (
     <>  
       <Header />
       <Profile state={profile} setState={setProfile} />
-      <Education />
+      <Education state={education} setState={setEducation} />
       <Experience />
       <Projects />
     </>
