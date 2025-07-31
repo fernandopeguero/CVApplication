@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Profile = ({state, setState}) => {
 
-    const [expanded, setExpanded] = useState(false);
+    const [expanded, setExpanded] = useState(true);
 
 
     return(
@@ -35,7 +35,6 @@ const Profile = ({state, setState}) => {
                     <label htmlFor="linkedin">Linkedin</label>
                     <input type="text" id="linkedin" autoComplete="linkedin" value={state.linkedin} onChange={(e) => {setState({...state, linkedin: e.target.value})}} />
 
-                    <button>Add Profile</button>
             </>
             )}
 

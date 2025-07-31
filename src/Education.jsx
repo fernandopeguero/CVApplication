@@ -25,10 +25,10 @@ const Education = () => {
                     <input type="text" id="degree" />
 
                     <label htmlFor="from_date">From</label>
-                    <input type="date" id="from_date" />
+                    <input type="text" id="from_date" />
 
                     <label htmlFor="to_date">To</label>
-                    <input type="date" id="to_date" />
+                    <input type="text" id="to_date" />
                 </>
             )}
 
