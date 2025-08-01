@@ -12,6 +12,7 @@ function App() {
 
     const [profile, setProfile] = useState({
         name: "",
+        profession:"",
         phone: "",
         email: "",
         portfolio: "",

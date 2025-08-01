@@ -20,6 +20,9 @@ const Profile = ({state, setState}) => {
                     <label htmlFor="name">Name</label>
                     <input type="text" id="name" autoComplete="name" value={state.name}  onChange={ (e) => { setState({...state, name: e.target.value}) }}/>
 
+                    <label htmlFor="profession">Profession</label>
+                    <input type="text" value={state.profession}  onChange={(e) => setState({...state, profession: e.target.value})}/>
+
                     <label htmlFor="phone">Phone Number</label>
                     <input type="text" id="phone" autoComplete="phone" value={state.phone} onChange={ (e) => { setState({...state, phone: e.target.value}) }} />
 
