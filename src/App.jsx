@@ -5,6 +5,7 @@ import Profile from './Profile'
 import Education from './Education'
 import Experience from './Experience'
 import Projects from './Projects'
+import Resume from './Resume'
 import { useState } from 'react'
 
 function App() {
@@ -34,13 +35,16 @@ function App() {
     
 
   return (
-    <>  
-      <Header />
-      <Profile state={profile} setState={setProfile} />
-      <Education state={education} setState={setEducation} />
-      <Experience state={experience} setState={setExperience} />
-      <Projects />
-    </>
+    <div>
+      <div>
+        <Header />
+        <Profile state={profile} setState={setProfile} />
+        <Education state={education} setState={setEducation} />
+        <Experience state={experience} setState={setExperience} />
+        <Projects />
+      </div>  
+      <Resume />
+    </div>
   )
 }
 
