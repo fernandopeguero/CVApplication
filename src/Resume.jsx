@@ -5,10 +5,10 @@ const Resume = () => {
     return (
         <div className="resume_holder">
             <section className="header_section">
-                <h1>Name</h1>
-                <h2>Profession</h2>
+                <h1 className="title">Name</h1>
+                <h2 className="profession">Profession</h2>
 
-                <div>
+                <div className="contact_info">
                     <p>Phone Number: 555-555-5555</p>
                     <p>exampleEmail@gmail.com</p>
                     <a href="#">LinkedIn</a>
@@ -27,9 +27,14 @@ const Resume = () => {
 
                 <div>
                     <h3>High School</h3>
+                    
+                    <div className="details">
 
                     <div>
-                        <p>Bronx, New york</p>
+                        <h4>Hunter College</h4>
+                        <h5>Bronx, New york</h5>
+
+                    </div>
                         <span>2012-2014</span>
                     </div>
                 </div>
@@ -38,12 +43,12 @@ const Resume = () => {
             <section className="experience_section">
                 <h2>Work Experience</h2>
 
-                <div>
+                <div className="details">
                     <div>
                         <h3>Job title</h3>
                         <h4>Bronx, New york</h4>
                     </div>
-                    <p>2012-present</p>
+                    <span>2012-present</span>
                 </div>
             </section>
 
