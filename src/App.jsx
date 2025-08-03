@@ -36,9 +36,12 @@ function App() {
     
 
   return (
-    <div>
-      <div>
-        <Header />
+    <>
+    <Header />
+    <div className="container">
+      
+      <div >
+        
         <Profile state={profile} setState={setProfile} />
         <Education state={education} setState={setEducation} />
         <Experience state={experience} setState={setExperience} />
@@ -46,6 +49,7 @@ function App() {
       </div>  
       <Resume />
     </div>
+    </>
   )
 }
 
