@@ -1,18 +1,19 @@
 
 
-const Resume = () => {
+const Resume = ({profile}) => {
 
     return (
         <div className="resume_holder">
             <section className="header_section">
-                <h1 className="title">Name</h1>
-                <h2 className="profession">Profession</h2>
+                <h1 className="title">{profile.name}</h1>
+                <h2 className="profession">{profile.profession}</h2>
 
                 <div className="contact_info">
-                    <p>Phone Number: 555-555-5555</p>
-                    <p>exampleEmail@gmail.com</p>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Github</a>
+                    <p>{profile.phone}</p>
+                    <p>{profile.email}</p>
+                    <a herf={profile.portfolio}>Portfolio</a>
+                    <a href={profile.linkedin}>LinkedIn</a>
+                    <a href={profile.github}>Github</a>
                 </div>
             </section>
 
@@ -27,7 +28,9 @@ const Resume = () => {
 
                 <div>
                     <h3>High School</h3>
-                    
+                    <div className="sub_section">
+
+
                     <div className="details">
 
                     <div>
@@ -38,11 +41,13 @@ const Resume = () => {
                         <span>2012-2014</span>
                     </div>
                 </div>
+                </div>
             </section>
 
             <section className="experience_section">
                 <h2>Work Experience</h2>
 
+                <div className="sub_section">
                 <div className="details">
                     <div>
                         <h3>Job title</h3>
@@ -50,12 +55,13 @@ const Resume = () => {
                     </div>
                     <span>2012-present</span>
                 </div>
+                </div>
             </section>
 
             <section className="project_section">
                 <h2>Projects</h2>
 
-                <div className="projects">
+                <div className="projects sub_section">
                     <article>
                         <h3>Project Title</h3>
                         <h4>city, State</h4>

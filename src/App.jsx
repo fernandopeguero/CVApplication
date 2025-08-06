@@ -11,13 +11,13 @@ import { useState } from 'react'
 function App() {
 
     const [profile, setProfile] = useState({
-        name: "",
-        profession:"",
-        phone: "",
-        email: "",
-        portfolio: "",
-        github: "",
-        linkedin: ""
+        name: "John Doe",
+        profession:"Liberal Arts",
+        phone: "555-555-5555",
+        email: "Example@gmail.com",
+        portfolio: "mysite.com",
+        github: "https://github.com/example",
+        linkedin: "https://linkedin.com/myprofile"
     })
 
     const [education, setEducation] = useState({
@@ -47,7 +47,7 @@ function App() {
         <Experience state={experience} setState={setExperience} />
         <Projects />
       </div>  
-      <Resume />
+      <Resume profile={profile}/>
     </div>
     </>
   )
