@@ -40,7 +40,7 @@ function App() {
     <Header />
     <div className="container">
       
-      <div >
+      <div className='forms' >
         
         <Profile state={profile} setState={setProfile} />
         <Education state={education} setState={setEducation} />
