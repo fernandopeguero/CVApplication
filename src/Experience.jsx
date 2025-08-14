@@ -24,6 +24,9 @@ const Experience = ({state, setState}) => {
                     <label htmlFor="position">Position</label>
                     <input type="text" id="position" value={state.position} onChange={(e) => setState({...state, position: e.target.value})} />
 
+                    <label htmlFor="location">Location</label>
+                    <input type="text" id="location" value={state.location} onChange={(e) => setState({...state, location: e.target.value})} />
+
                     <label htmlFor="from_date">From</label>
                     <input type="text" id="from_date" value={state.from} onChange={(e) => setState({...state, from: e.target.value})}/>
 

@@ -1,6 +1,6 @@
 
 
-const Resume = ({profile, education}) => {
+const Resume = ({profile, education, experience}) => {
 
     return (
         <div className="resume_holder">
@@ -48,12 +48,13 @@ const Resume = ({profile, education}) => {
                 <h2>Work Experience</h2>
 
                 <div className="sub_section">
+                    <h3>{experience.company}</h3>
                 <div className="details">
                     <div>
-                        <h3>Job title</h3>
-                        <h4>Bronx, New york</h4>
+                        <h3>{experience.position}</h3>
+                        <h4>{experience.location}</h4>
                     </div>
-                    <span>2012-present</span>
+                    <span>{experience.from} - {experience.to}</span>
                 </div>
                 </div>
             </section>

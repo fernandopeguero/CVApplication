@@ -31,6 +31,7 @@ function App() {
     const [experience, setExperience] = useState({
         company:"",
         position: "",
+        location: "",
         from:"",
         to: ""
     })
@@ -48,7 +49,7 @@ function App() {
         <Experience state={experience} setState={setExperience} />
         <Projects />
       </div>  
-      <Resume profile={profile} education={education}/>
+      <Resume profile={profile} education={education} experience={experience}/>
     </div>
     </>
   )
