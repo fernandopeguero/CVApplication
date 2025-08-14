@@ -26,6 +26,9 @@ const Education = ({state, setState}) => {
                     <label htmlFor="degree">Degree/Certificates</label>
                     <input type="text" id="degree" value={state.degree} onChange={(e) => setState({...state, degree: e.target.value})}/>
 
+                    <label htmlFor="location">Location</label>
+                    <input type="text" id="location" value={state.location} onChange={(e) => setState({...state, location: e.target.value})} />
+
                     <label htmlFor="from_date">From</label>
                     <input type="text" id="from_date" value={state.from} onChange={(e) => setState({...state, from: e.target.value})}/>
 

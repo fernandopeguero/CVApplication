@@ -1,6 +1,6 @@
 
 
-const Resume = ({profile}) => {
+const Resume = ({profile, education}) => {
 
     return (
         <div className="resume_holder">
@@ -27,18 +27,18 @@ const Resume = ({profile}) => {
                 <h2 className="title">Education</h2>
 
                 <div>
-                    <h3>High School</h3>
+                    <h3>{education.school}</h3>
                     <div className="sub_section">
 
 
                     <div className="details">
 
                     <div>
-                        <h4>Hunter College</h4>
-                        <h5>Bronx, New york</h5>
+                        <h4>{education.degree}</h4>
+                        <h5>{education.location}</h5>
 
                     </div>
-                        <span>2012-2014</span>
+                        <span>{education.from} - {education.to}</span>
                     </div>
                 </div>
                 </div>
